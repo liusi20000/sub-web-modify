@@ -890,28 +890,6 @@ export 默认 {
     toolsDown() {
       window.open(downld);
     },
-    gotoBasicVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
-        type: "warning",
-        confirmButtonText: '确定',
-        customClass: 'msgbox',
-        showClose: false,
-      })
-        .then(() => {
-          window.open(basicVideo);
-        });
-    },
-    gotoAdvancedVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
-        type: "warning",
-        confirmButtonText: '确定',
-        customClass: 'msgbox',
-        showClose: false,
-      })
-        .then(() => {
-          window.open(advancedVideo);
-        });
-    },
     makeUrl() {
       if (this.form.sourceSubUrl === "" || this.form.clientType === "") {
         this.$message.error("订阅链接与客户端为必填项");
@@ -1198,3 +1176,4 @@ export 默认 {
   }
 };
 </script> 
+
