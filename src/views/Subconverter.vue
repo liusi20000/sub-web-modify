@@ -99,7 +99,7 @@
                           </el-row>
                           <el-row :gutter="10">
                             <el-col :span="12">
-                              <el-checkbox v-model="form.tpl。clash.doh" label="Clash.DoH"></el-checkbox>
+                              <el-checkbox v-model="form.tpl.clash.doh" label="Clash.DoH"></el-checkbox>
                             </el-col>
                             <el-col :span="12">
                               <el-checkbox v-model="form.appendType" label="插入节点类型"></el-checkbox>
@@ -274,12 +274,12 @@ const project = process.env.VUE_APP_PROJECT
 const configScriptBackend = process.env.VUE_APP_CONFIG_UPLOAD_BACKEND + '/api.php'
 const remoteConfigSample = process.env.VUE_APP_SUBCONVERTER_REMOTE_CONFIG
 const scriptConfigSample = process.env.VUE_APP_SCRIPT_CONFIG
-const filterConfigSample = process.env。VUE_APP_FILTER_CONFIG
+const filterConfigSample = process.env.VUE_APP_FILTER_CONFIG
 const defaultBackend = process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND
 const shortUrlBackend = process.env.VUE_APP_MYURLS_DEFAULT_BACKEND + '/short'
-const configUploadBackend = process.env。VUE_APP_CONFIG_UPLOAD_BACKEND + '/sub.php'
-const basicVideo = process.env。VUE_APP_BASIC_VIDEO
-const advancedVideo = process.env。VUE_APP_ADVANCED_VIDEO
+const configUploadBackend = process.env.VUE_APP_CONFIG_UPLOAD_BACKEND + '/sub.php'
+const basicVideo = process.env.VUE_APP_BASIC_VIDEO
+const advancedVideo = process.env.VUE_APP_ADVANCED_VIDEO
 const tgBotLink = process.env.VUE_APP_BOT_LINK
 const yglink = process.env.VUE_APP_YOUTUBE_LINK
 const bzlink = process.env.VUE_APP_BILIBILI_LINK
@@ -806,18 +806,18 @@ export 默认 {
   }，
   创建() {
     document.title = "在线订阅转换工具";
-    this。isPC = this。$getOS().isPc;
+    this.isPC = this.$getOS().isPc;
   }，
   mounted() {
     //this.tanchuang();
-    this。form。clientType = "clash";
-    this。getBackendVersion();
-    this。anhei();
+    this.form.clientType = "clash";
+    this.getBackendVersion();
+    this.anhei();
     let lightMedia = window.matchMedia('(prefers-color-scheme: light)');
     let darkMedia = window.matchMedia('(prefers-color-scheme: dark)');
     let callback = (e) => {
       if (e.matches) {
-        this。anhei();
+        this.anhei();
       }
     };
     if (typeof darkMedia.addEventListener === 'function' || typeof lightMedia.addEventListener === 'function') {
@@ -1097,7 +1097,7 @@ export 默认 {
           this.form.scv = param.get("scv") === 'true';
         }
         if (param.get("fdn")) {
-          this.form。fdn = param.get("fdn") === 'true';
+          this.form.fdn = param.get("fdn") === 'true';
         }
         if (param.get("surge.doh")) {
           this.form.tpl.surge.doh = param.get("surge.doh") === 'true';
@@ -1176,4 +1176,5 @@ export 默认 {
   }
 };
 </script> 
+
 
