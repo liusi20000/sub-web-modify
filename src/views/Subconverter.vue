@@ -771,7 +771,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://sub.555537.xyz" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://sub.555537.xyz/sub?" : this.getUrlParam(),
         shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
@@ -1295,5 +1295,6 @@ export default {
   }
 };
 </script>
+
 
 
