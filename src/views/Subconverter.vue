@@ -335,10 +335,10 @@ export default {
           "v1.mk": "https://v1.mk/short",
         },
         customBackend: {
-          subconverter作者提供: "https://sub.555537.xyz",
+          subconverter作者提供: "https://sub.555537.xyz/sub?",
         },
         backendOptions: [
-          { value: "https://sub.555537.xyz" },
+          { value: "https://sub.555537.xyz/sub?" },
         ],
         remoteConfig: [
           {
@@ -1295,4 +1295,5 @@ export default {
   }
 };
 </script>
+
 
