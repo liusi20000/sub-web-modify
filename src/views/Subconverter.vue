@@ -335,10 +335,10 @@ export default {
           "v1.mk": "https://v1.mk/short",
         },
         customBackend: {
-          subconverter作者提供: "https://sub.555537.xyz/sub?",
+          subconverter作者提供: "https://sub.8517979.xyz",
         },
         backendOptions: [
-          { value: "https://sub.555537.xyz/sub?" },
+          { value: "https://sub.8517979.xyz" },
         ],
         remoteConfig: [
           {
@@ -771,7 +771,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://sub.555537.xyz/sub?" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://sub.8517979.xyz" : this.getUrlParam(),
         shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
@@ -1295,6 +1295,7 @@ export default {
   }
 };
 </script>
+
 
 
 
